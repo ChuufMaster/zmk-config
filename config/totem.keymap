@@ -49,6 +49,15 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        end_home: end_home {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp ENTER>;
+            label = "END_HOME";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -65,10 +74,10 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &kp N7        &kp N8        &kp N9        &kp LBRC    &kp RBRC        &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LBKT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LPAR    &kp RPAR        &kp MINUS       &trans        &kp PLUS         &kp KP_MULTIPLY  &kp PLUS
-                                            &trans        &trans        &trans      &trans          &trans          &kp DOT
+              &kp TILDE     &kp RC(RIGHT_ARROW)  &kp END        &kp N9        &kp LBRC              &kp RBRC        &kp PAGE_UP     &kp HOME      &end_home        &kp K_PASTE
+              &kp END       &kp LC(S)            &kp PAGE_DOWN  &kp LSHFT     &kp LBKT              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS
+&kp LEFT_ALT  &kp LEFT_WIN  &kp DELETE           &kp NUMBER_2   &kp NUMBER_3  &kp LC(LEFT_ARROW)    &kp RPAR        &kp MINUS       &trans        &kp PLUS         &kp KP_MULTIPLY  &kp PLUS
+                                                 &trans         &trans        &trans                &trans          &trans          &kp DOT
             >;
         };
 
