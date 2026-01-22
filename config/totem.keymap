@@ -141,7 +141,7 @@
            &kp TILDE     &kp RC(RIGHT_ARROW)  &kp END        &kp N9     &kp LBRC              &kp RBRC        &kp PAGE_UP     &kp HOME      &end_home        &kp K_PASTE
            &kp END       &kp LC(S)            &kp PAGE_DOWN  &kp LSHFT  &kp LBKT              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS
 &kp GRAVE  &kp LEFT_WIN  &kp DELETE           &kp LC(C)      &kp LC(V)  &kp LC(LEFT_ARROW)    &kp RPAR        &kp C_VOL_DN    &kp C_VOL_UP  &kp PLUS         &kp KP_MULTIPLY  &kp PLUS
-                                              &trans         &trans     &trans                &trans          &trans          &kp DOT
+                                              &trans         &trans     &trans                &trans          &kp BACKSPACE   &kp DOT
             >;
         };
 
